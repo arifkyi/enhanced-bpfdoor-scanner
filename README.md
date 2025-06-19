@@ -1,4 +1,4 @@
-# BPFDoor Detection Tools
+# Enhanced BPFDoor Scanner
 
 A comprehensive toolkit for detecting and testing BPFDoor backdoor infections in network environments.
 
@@ -10,7 +10,7 @@ This repository contains enhanced tools for detecting BPFDoor malware, including
 
 ## 📁 Repository Contents
 
-- `enhancedbpfdoor_scanner.py` - Enhanced scanner that detects both TCP and UDP/ICMP magic numbers
+- `enhanced_bpfdoor_scanner.py` - Enhanced scanner that detects both TCP and UDP/ICMP magic numbers
 - `bpfdoor_sim.py` - BPFDoor simulator for testing and training purposes
 
 ## ⚡ Features
@@ -49,15 +49,15 @@ sudo python3 bpfdoor_sim.py --ip 192.168.1.12 --ports 22,80,443
 #### 2. Run the Scanner (Terminal 2)
 ```bash
 # Scan network for BPFDoor infections
-python3 enhancedbpfdoor_scanner.py 192.168.1.0/24 -p 22,80,443 -i 192.168.1.12 -l 8000 -v
+python3 enhanced_bpfdoor_scanner.py 192.168.1.0/24 -p 22,80,443 -i 192.168.1.12 -l 8000 -v
 ```
 
 ## 📖 Detailed Usage
 
-### BPFDoor Scanner
+### Enhanced BPFDoor Scanner
 
 ```bash
-python3 enhancedbpfdoor_scanner.py <targets> [options]
+python3 enhanced_bpfdoor_scanner.py <targets> [options]
 ```
 
 #### Arguments
@@ -74,22 +74,22 @@ python3 enhancedbpfdoor_scanner.py <targets> [options]
 
 **Scan single host:**
 ```bash
-python3 enhancedbpfdoor_scanner.py 192.168.1.100 -i 192.168.1.50 -l 4444
+python3 enhanced_bpfdoor_scanner.py 192.168.1.100 -i 192.168.1.50 -l 4444
 ```
 
 **Scan network range with custom ports:**
 ```bash
-python3 enhancedbpfdoor_scanner.py 10.0.0.0/24 -p 22,80,443,8080 -i 10.0.0.50 -l 4444
+python3 enhanced_bpfdoor_scanner.py 10.0.0.0/24 -p 22,80,443,8080 -i 10.0.0.50 -l 4444
 ```
 
 **Test only TCP magic numbers:**
 ```bash
-python3 enhancedbpfdoor_scanner.py 192.168.1.0/24 -i 192.168.1.50 -l 4444 -m tcp
+python3 enhanced_bpfdoor_scanner.py 192.168.1.0/24 -i 192.168.1.50 -l 4444 -m tcp
 ```
 
 **Verbose scanning with port ranges:**
 ```bash
-python3 enhancedbpfdoor_scanner.py 192.168.1.0/24 -p 1-1000 -i 192.168.1.50 -l 4444 -v
+python3 enhanced_bpfdoor_scanner.py 192.168.1.0/24 -p 1-1000 -i 192.168.1.50 -l 4444 -v
 ```
 
 ### BPFDoor Simulator
@@ -127,7 +127,7 @@ sudo python3 bpfdoor_sim.py --ip 192.168.1.100 --ports 22,80,443,3389,5900
 sudo python3 bpfdoor_sim.py --ip 127.0.0.1 --ports 8022,8080,8443
 
 # Terminal 2: Scan localhost
-python3 enhancedbpfdoor_scanner.py 127.0.0.1 -p 8022,8080,8443 -i 127.0.0.1 -l 9000
+python3 enhanced_bpfdoor_scanner.py 127.0.0.1 -p 8022,8080,8443 -i 127.0.0.1 -l 9000
 ```
 
 ### Scenario 2: Network Range Testing
@@ -136,16 +136,16 @@ python3 enhancedbpfdoor_scanner.py 127.0.0.1 -p 8022,8080,8443 -i 127.0.0.1 -l 9
 sudo python3 bpfdoor_sim.py --ip 192.168.1.100 --ports 22,80,443
 
 # Terminal 2: Scan entire subnet
-python3 enhancedbpfdoor_scanner.py 192.168.1.0/24 -p 22,80,443 -i 192.168.1.50 -l 8000 -v
+python3 enhanced_bpfdoor_scanner.py 192.168.1.0/24 -p 22,80,443 -i 192.168.1.50 -l 8000 -v
 ```
 
 ### Scenario 3: Magic Number Comparison
 ```bash
 # Test TCP magic only
-python3 enhancedbpfdoor_scanner.py 192.168.1.100 -i 192.168.1.50 -l 8000 -m tcp
+python3 enhanced_bpfdoor_scanner.py 192.168.1.100 -i 192.168.1.50 -l 8000 -m tcp
 
 # Test UDP magic only  
-python3 enhancedbpfdoor_scanner.py 192.168.1.100 -i 192.168.1.50 -l 8000 -m udp
+python3 enhanced_bpfdoor_scanner.py 192.168.1.100 -i 192.168.1.50 -l 8000 -m udp
 ```
 
 ## 🔧 Technical Details
@@ -220,6 +220,16 @@ v2.0 - ENHANCED - By the SnapAttack Research Team
 ## 🤝 Contributing
 
 Feel free to submit issues, suggestions, or improvements. This project is focused on defensive security research and education.
+
+## ☕ Support Me, Support Rifky The Cyber YouTube Channel
+
+If you find this tool helpful and would like to support its development, you can buy me a coffee!
+
+**[☕ Support on Ko-fi](https://ko-fi.com/rifkythecyber)**
+
+Or scan the QR code below:
+
+<img src="https://github.com/user-attachments/assets/a6529b25-06eb-4072-9077-6682aad0807a" alt="Donate" width="200">
 
 ## 🙏 Credits
 
