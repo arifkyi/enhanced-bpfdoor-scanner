@@ -38,6 +38,11 @@ python3 --version
 # No additional dependencies needed - uses standard library only
 ```
 
+### 📺 Video Tutorial
+
+**Watch the complete walkthrough on YouTube:**  
+🎥 **[BPFDoor Detection Tutorial - Rifky The Cyber](https://www.youtube.com/watch?v=jeLr2TXUG_k)**
+
 ### Basic Usage
 
 #### 1. Start the Simulator (Terminal 1)
