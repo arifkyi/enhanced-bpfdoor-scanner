@@ -257,8 +257,8 @@ if __name__ == "__main__":
     # wait until the thread terminates
     q.join()
 
-    print('[*] Scanning complete! Waiting 5 seconds for any remaining UDP messages to come back in...')
-    time.sleep(5)
+    print('[*] Scanning complete! Waiting 30 seconds for any remaining UDP messages and reverse shells...')
+    time.sleep(30)
 
     if len(compromised_hosts) == 0:
         print('[*] Good news! None of the target hosts appear to be compromised!')
