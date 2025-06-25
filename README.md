@@ -115,6 +115,32 @@ python3 advanced_bpfdoor_sim.py --ip 192.168.1.23 --ports 8022,8080,8443
 
 *📺 [Complete simulator setup and usage available in video tutorial](https://www.youtube.com/watch?v=YOUR_VIDEO_LINK_HERE)*
 
+## 🧪 Advanced Testing Environment
+
+### BPFDoor Simulator Usage
+For comprehensive testing and educational purposes, this repository includes an advanced BPFDoor simulator:
+
+```bash
+# Basic simulator usage
+python3 advanced_bpfdoor_sim.py --ip <target_ip> --ports <port_list>
+
+# Example with custom IP and ports
+python3 advanced_bpfdoor_sim.py --ip 192.168.1.23 --ports 8022,8080,8443
+```
+
+#### Simulator Arguments
+- `--ip` - IP address to bind the simulator (required)
+- `--ports` - Comma-separated list of ports to listen on (required)
+
+#### Available Capabilities
+- ✅ **TCP Magic Detection** - Responds to 0x5293 packets
+- ✅ **UDP/ICMP Magic Detection** - Responds to 0x7255 packets  
+- ✅ **Reverse Shell Simulation** - Establishes backdoor connections
+- ✅ **SSH Backdoor Simulation** - Interactive terminal access
+- ✅ **Multi-port Listening** - Simultaneous port monitoring
+
+*📺 [Complete simulator setup and usage available in video tutorial](https://www.youtube.com/watch?v=YOUR_VIDEO_LINK_HERE)*
+
 ## 🔧 Technical Details
 
 ### Magic Numbers Detected
