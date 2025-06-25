@@ -89,6 +89,32 @@ python3 enhanced_bpfdoor_scanner.py 192.168.1.0/24 -p 1-1000 -i 192.168.1.50 -l 
 python3 enhanced_bpfdoor_scanner.py 172.16.0.0/16 -p 21,22,23,25,53,80,135,443,445,3389 -i 172.16.1.100 -l 9000
 ```
 
+## 🧪 Advanced Testing Environment
+
+### BPFDoor Simulator Usage
+For comprehensive testing and educational purposes, this repository includes an advanced BPFDoor simulator:
+
+```bash
+# Basic simulator usage
+python3 advanced_bpfdoor_sim.py --ip <target_ip> --ports <port_list>
+
+# Example with custom IP and ports
+python3 advanced_bpfdoor_sim.py --ip 192.168.1.23 --ports 8022,8080,8443
+```
+
+#### Simulator Arguments
+- `--ip` - IP address to bind the simulator (required)
+- `--ports` - Comma-separated list of ports to listen on (required)
+
+#### Available Capabilities
+- ✅ **TCP Magic Detection** - Responds to 0x5293 packets
+- ✅ **UDP/ICMP Magic Detection** - Responds to 0x7255 packets  
+- ✅ **Reverse Shell Simulation** - Establishes backdoor connections
+- ✅ **SSH Backdoor Simulation** - Interactive terminal access
+- ✅ **Multi-port Listening** - Simultaneous port monitoring
+
+*📺 [Complete simulator setup and usage available in video tutorial](https://www.youtube.com/watch?v=YOUR_VIDEO_LINK_HERE)*
+
 ## 🔧 Technical Details
 
 ### Magic Numbers Detected
@@ -118,7 +144,8 @@ python3 enhanced_bpfdoor_scanner.py 172.16.0.0/16 -p 21,22,23,25,53,80,135,443,4
 ```
 ██████╗ ██████╗ ███████╗██████╗  ██████╗  ██████╗ ██████╗     
 ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔═══██╗██╔═══██╗██╔══██╗    
-v2.0 - ENHANCED - By the SnapAttack Research Team
+Enhanced BPFDoor Scanner v2.0
+Enhanced by Rifky The Cyber - Based on SnapAttack Research Team's work
 
 [*] Magic number configuration:
     - TCP Magic: 0x5293 (payload: 52930000)

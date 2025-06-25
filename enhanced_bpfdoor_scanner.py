@@ -40,7 +40,8 @@ def banner():
 ███████║╚██████╗██║  ██║██║ ╚████║██║ ╚████║███████╗██║  ██║  
 ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝  
                                                               
-v2.0 - ENHANCED - By the SnapAttack Research Team
+Enhanced BPFDoor Scanner v2.0
+Enhanced by Rifky The Cyber - Based on SnapAttack Research Team's work
 '''
     print(banner)
 
