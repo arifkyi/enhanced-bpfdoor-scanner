@@ -29,7 +29,7 @@ python3 --version
 ### 📺 Complete Tutorial & Testing Guide
 
 **🎥 Watch the full walkthrough and learn how to test the scanner:**  
-**[Enhanced BPFDoor Scanner Tutorial - Rifky The Cyber](https://www.youtube.com/watch?v=YOUR_VIDEO_LINK_HERE)**
+**[Enhanced BPFDoor Scanner Tutorial - Rifky The Cyber]([https://www.youtube.com/watch?v=YOUR_VIDEO_LINK_HERE](https://youtu.be/MNeneMz5fZE))**
 
 *The video includes exclusive testing methodology with realistic backdoor simulation - not available in documentation!*
 
