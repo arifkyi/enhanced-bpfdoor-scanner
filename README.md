@@ -29,7 +29,7 @@ python3 --version
 ### 📺 Complete Tutorial & Testing Guide
 
 **🎥 Watch the full walkthrough and learn how to test the scanner:**  
-**[Enhanced BPFDoor Scanner Tutorial - Rifky The Cyber]([https://www.youtube.com/watch?v=YOUR_VIDEO_LINK_HERE](https://youtu.be/MNeneMz5fZE))**
+**[Enhanced BPFDoor Scanner Tutorial - Rifky The Cyber](https://www.youtube.com/watch?v=MNeneMz5fZE)**
 
 *The video includes exclusive testing methodology with realistic backdoor simulation - not available in documentation!*
 
@@ -113,7 +113,7 @@ python3 advanced_bpfdoor_sim.py --ip 192.168.1.23 --ports 8022,8080,8443
 - ✅ **SSH Backdoor Simulation** - Interactive terminal access
 - ✅ **Multi-port Listening** - Simultaneous port monitoring
 
-*📺 [Complete simulator setup and usage available in video tutorial](https://www.youtube.com/watch?v=YOUR_VIDEO_LINK_HERE)*
+*📺 [Complete simulator setup and usage available in video tutorial](https://www.youtube.com/watch?v=MNeneMz5fZE)*
 
 ## 🧪 Advanced Testing Environment
 
